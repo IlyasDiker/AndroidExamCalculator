@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#cbcdd1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:padding="20px"
+                android:text="Identification" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Entrer votre nom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20px"
+                    android:text="Groupe" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:entries="@array/GroupeArray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="20px"
+                    android:text="Niveau" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="128dp"
+                        android:layout_height="wrap_content"
+                        android:text="T" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TS" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#cbcdd1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:padding="20px"
+                android:text="Examen de communication:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Arabe" />
+
+                <EditText
+                    android:id="@+id/arfiled"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="/20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Francais" />
+
+                <EditText
+                    android:id="@+id/frfield"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="/40" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Anglais" />
+
+                <EditText
+                    android:id="@+id/engfield"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="/20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6b8ac7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Moyenne communication" />
+
+                <EditText
+                    android:id="@+id/result1"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/calculer1"
+                    android:layout_width="143dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="calculerexam"
+                    android:text="Calculer" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="#cbcdd1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:padding="20px"
+                android:text="Examen Fin Formation" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Moyenne EFM" />
+
+                <EditText
+                    android:id="@+id/moyennefield"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="/20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Pratique" />
+
+                <EditText
+                    android:id="@+id/pratiquefield"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="/40" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Theorie" />
+
+                <EditText
+                    android:id="@+id/theoriefield"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:layout_width="232dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="/20" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6b8ac7"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="30px"
+                    android:text="Moyenne Generale: " />
+
+                <EditText
+                    android:id="@+id/result2"
+                    android:layout_width="96dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/calculer2"
+                    android:layout_width="143dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="calculergeneral"
+                    android:text="Calculer" />
+
+                <Button
+                    android:id="@+id/annuler2"
+                    android:layout_width="143dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:onClick="backtonormal"
+                    android:text="Annuler" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

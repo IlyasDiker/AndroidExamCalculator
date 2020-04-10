@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/item1"
+        android:icon="@drawable/icons8_chrome_48px"
+        android:title="Browser"
+        app:showAsAction="ifRoom"
+        android:onClick="openbrowser"
+
+        />
+    <item android:id="@+id/item5"
+        android:icon="@drawable/icons8_home_48px_1"
+        android:title="Home"
+        app:showAsAction="ifRoom"
+        android:onClick="openhome"
+
+        />
+    <item android:id="@+id/item2"
+        android:title="Ajouter"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/item3"
+        android:title="Modifier"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/item4"
+        android:title="Supprimer"
+        app:showAsAction="never"
+        />
+</menu>
